@@ -43,7 +43,7 @@ define KernelPackage/ipt-fullconenat
   SUBMENU:=Netfilter Extensions
   TITLE:=FULLCONENAT netfilter module
   DEPENDS:=+kmod-nf-ipt +kmod-nf-nat
-  KCONFIG:=CONFIG_NF_CONNTRACK_EVENTS=y CONFIG_NF_CONNTRACK_CHAIN_EVENTS=y
+  KCONFIG:=CONFIG_NF_CONNTRACK_EVENTS=y CONFIG_NF_CONNTRACK_CHAIN_EVENTS=n
   FILES:=$(PKG_BUILD_DIR)/xt_FULLCONENAT.ko
 endef
 
